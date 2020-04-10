@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <title>video gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+     crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cairo:600|Pacifico" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <!--header-->
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-background">
+      <a class="navbar-brand" href="#">VIDEO MANIA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+              languages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#english">ENGLISH</a>
+              <a class="dropdown-item" href="#hindi">HINDI</a>
+              <a class="dropdown-item" href="#kannada">KANNADA</a>
+              <a class="dropdown-item" href="#telugu">TELUGU</a>
+              <a class="dropdown-item" href="#pop">POP</a>
+              <a class="dropdown-item" href="#punjabi">PUNJABI</a>
+            </div>
+          </li>
+        <!--  <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>-->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="sign-in" >Search</button>
+         
+        </form>
+
+      </div>
+      <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</button>
+    </nav>
+    
+</header>
+
+<!--slider-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <!--  <img class="d-block w-100 h-200" src="wall1.jpg" alt="First slide">-->
+        <iframe width=100% height=100% src="https://www.youtube.com/embed/fbZUjYwn9UE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+          <iframe width=100% height=100% src="https://www.youtube.com/embed/4H1Hc95j4pw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+          <iframe width=100% height=100% src="https://www.youtube.com/embed/0VwgpYJ4q38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+<!--card-->
+<div id="menu-all">
+   <section class="gallery">
+  <!--hindi-->
+  <div >
+  <p >
+     <button class="large-button lb1 mob-button"  data-toggle="collapse" role="button" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample1"><h2 id="hindi">HINDI</h2></button>
+  </p>
+
+
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+
+                      <div class="card bg-dark" style="width: 18rem;">
+                      <iframe width="250" height="150" src="https://www.youtube.com/embed/TRa9IMvccjg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="card-body">
+                          <h5 class="card-title">Dilbar</h5>
+                           <a href="https://www.youtube.com/watch/TRa9IMvccjg" class="btn btn-primary">Play with Youtube</a>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark" style="width: 18rem;">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/g7PP_gkcdgE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                     <div class="card-body">
+                       <h5 class="card-title">Bom diggy</h5>
+                       <a href="https://www.youtube.com/embed/g7PP_gkcdgE" class="btn btn-primary">Play with Youtube</a>
+                     </div>
+                    </div>
+
+                    <div class="card bg-dark" style="width: 18rem;">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/Ov0YGGSY6gY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="card-body">
+                    <h5 class="card-title">Kaun Tujhe</h5>
+                      <a href="https://www.youtube.com/embed/Ov0YGGSY6gY" class="btn btn-primary">Play with Youtube</a>
+                    </div>
+                    </div>
+
+                    <div class="card bg-dark" style="width: 18rem;">
+                    <iframe width="250" height="150"
+                    src="https://www.youtube.com/embed/_iktURk0X-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="card-body">
+                    <h5 class="card-title">Phir b</h5>
+
+                    <a href="https://www.youtube.com/embed/_iktURk0X-A" class="btn btn-primary">Play with Youtube</a>
+                    </div>
+                    </div>
+
+
+                    <div class="card bg-dark" style="width: 18rem;">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/IJq0yyWug1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="card-body">
+                    <h5 class="card-title">Tum Hi ho</h5>
+
+                    <a href="https://www.youtube.com/embed/IJq0yyWug1k" class="btn btn-primary">Play with Youtube</a>
+                    </div>
+                    </div>
+
+
+                    <div class="card bg-dark" style="width: 18rem;">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/mEMHF5W4zlY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="card-body">
+                    <h5 class="card-title">tera ghata</h5>
+
+                    <a href="https://www.youtube.com/embed/mEMHF5W4zlY" class="btn btn-primary">Play with Youtube</a>
+                    </div>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+<!--english -->
+  <div >
+  <p >
+      <button class="large-button lb2" data-toggle="collapse"  role="button" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3"><h2 id="english">ENGLISH </h2></button>
+  </p>
+<div class="collapse" id="collapseExample2">
+  <div class="card card-body">
+
+            <div class="card" style="width: 18rem;">
+            <iframe width="250" height="150" src="https://www.youtube.com/embed/nCD2hj6zJEc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Dheere Dheere</h5>
+                 <a href="https://www.youtube.com/embed/nCD2hj6zJEc" class="btn btn-primary">Play with Youtube</a>
+              </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/g7PP_gkcdgE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           <div class="card-body">
+             <h5 class="card-title">Bom diggy</h5>
+             <a href="https://www.youtube.com/embed/g7PP_gkcdgE" class="btn btn-primary">Play with Youtube</a>
+           </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/Ov0YGGSY6gY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+          <h5 class="card-title">Kaun Tujhe</h5>
+            <a href="https://www.youtube.com/embed/Ov0YGGSY6gY" class="btn btn-primary">Play with Youtube</a>
+          </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+          <iframe width="250" height="150"
+          src="https://www.youtube.com/embed/_iktURk0X-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+          <h5 class="card-title">Phir b</h5>
+
+          <a href="https://www.youtube.com/embed/_iktURk0X-A" class="btn btn-primary">Play with Youtube</a>
+          </div>
+          </div>
+
+
+          <div class="card" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/IJq0yyWug1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+          <h5 class="card-title">Tum Hi ho</h5>
+
+          <a href="https://www.youtube.com/embed/IJq0yyWug1k" class="btn btn-primary">Play with Youtube</a>
+          </div>
+          </div>
+
+
+          <div class="card" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/mEMHF5W4zlY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+          <h5 class="card-title">tera ghata</h5>
+
+          <a href="https://www.youtube.com/embed/mEMHF5W4zlY" class="btn btn-primary">Play with Youtube</a>
+          </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!--kannada songs-->
+<div >
+<p >
+<button class="large-button lb3"  data-toggle="collapse" role="button" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"><h2 id="kannada">KANNADA</h2></button>
+</p>
+<div class="collapse" id="collapseExample3">
+  <div class="card card-body">
+
+            <div class="card bg-dark" style="width: 18rem;">
+            <iframe width="250" height="150" src="https://www.youtube.com/embed/nCD2hj6zJEc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Dheere Dheere</h5>
+                 <a href="https://www.youtube.com/embed/nCD2hj6zJEc" class="btn btn-primary">Play with Youtube</a>
+              </div>
+          </div>
+
+          <div class="card bg-dark" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/g7PP_gkcdgE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           <div class="card-body">
+             <h5 class="card-title">Bom diggy</h5>
+             <a href="https://www.youtube.com/embed/g7PP_gkcdgE" class="btn btn-primary">Play with Youtube</a>
+           </div>
+          </div>
+
+          <div class="card bg-dark" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/Ov0YGGSY6gY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+          <h5 class="card-title">Kaun Tujhe</h5>
+            <a href="https://www.youtube.com/embed/Ov0YGGSY6gY" class="btn btn-primary">Play with Youtube</a>
+          </div>
+          </div>
+
+          <div class="card bg-dark" style="width: 18rem;">
+          <iframe width="250" height="150"
+          src="https://www.youtube.com/embed/_iktURk0X-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+          <h5 class="card-title">Phir b</h5>
+
+          <a href="https://www.youtube.com/embed/_iktURk0X-A" class="btn btn-primary">Play with Youtube</a>
+          </div>
+          </div>
+
+
+          <div class="card bg-dark" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/IJq0yyWug1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+          <h5 class="card-title">Tum Hi ho</h5>
+
+          <a href="https://www.youtube.com/embed/IJq0yyWug1k" class="btn btn-primary">Play with Youtube</a>
+          </div>
+          </div>
+
+
+          <div class="card bg-dark" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/mEMHF5W4zlY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+          <h5 class="card-title">tera ghata</h5>
+
+          <a href="https://www.youtube.com/embed/mEMHF5W4zlY" class="btn btn-primary">Play with Youtube</a>
+          </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+<!--telugu-->
+<div>
+<p >
+   <button class="large-button lb4"  data-toggle="collapse" role="button" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample"><h2  id="telugu">TELUGU</h2></button>
+</p>
+
+
+        <div class="collapse" id="collapseExample4">
+          <div class="card card-body">
+
+                    <div class="card bg-dark" style="width: 18rem;">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/nCD2hj6zJEc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      <div class="card-body">
+                        <h5 class="card-title">Dheere Dheere</h5>
+                         <a href="https://www.youtube.com/embed/nCD2hj6zJEc" class="btn btn-primary">Play with Youtube</a>
+                      </div>
+                  </div>
+
+                  <div class="card bg-dark" style="width: 18rem;">
+                  <iframe width="250" height="150" src="https://www.youtube.com/embed/g7PP_gkcdgE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                   <div class="card-body">
+                     <h5 class="card-title">Bom diggy</h5>
+                     <a href="https://www.youtube.com/embed/g7PP_gkcdgE" class="btn btn-primary">Play with Youtube</a>
+                   </div>
+                  </div>
+
+                  <div class="card bg-dark" style="width: 18rem;">
+                  <iframe width="250" height="150" src="https://www.youtube.com/embed/Ov0YGGSY6gY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <div class="card-body">
+                  <h5 class="card-title">Kaun Tujhe</h5>
+                    <a href="https://www.youtube.com/embed/Ov0YGGSY6gY" class="btn btn-primary">Play with Youtube</a>
+                  </div>
+                  </div>
+
+                  <div class="card bg-dark" style="width: 18rem;">
+                  <iframe width="250" height="150"
+                  src="https://www.youtube.com/embed/_iktURk0X-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <div class="card-body">
+                  <h5 class="card-title">Phir b</h5>
+
+                  <a href="https://www.youtube.com/embed/_iktURk0X-A" class="btn btn-primary">Play with Youtube</a>
+                  </div>
+                  </div>
+
+
+                  <div class="card bg-dark" style="width: 18rem;">
+                  <iframe width="250" height="150" src="https://www.youtube.com/embed/IJq0yyWug1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <div class="card-body">
+                  <h5 class="card-title">Tum Hi ho</h5>
+
+                  <a href="https://www.youtube.com/embed/IJq0yyWug1k" class="btn btn-primary">Play with Youtube</a>
+                  </div>
+                  </div>
+
+
+                  <div class="card bg-dark" style="width: 18rem;">
+                  <iframe width="250" height="150" src="https://www.youtube.com/embed/mEMHF5W4zlY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <div class="card-body">
+                  <h5 class="card-title">tera ghata</h5>
+
+                  <a href="https://www.youtube.com/embed/mEMHF5W4zlY" class="btn btn-primary">Play with Youtube</a>
+                  </div>
+                  </div>
+            </div>
+          </div>
+ </div>
+
+
+
+<!--pop -->
+<div >
+<p >
+    <button class="large-button lb5" data-toggle="collapse"  role="button" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6"><h2 id="pop">POP </h2></button>
+</p>
+<div class="collapse" id="collapseExample5">
+<div class="card card-body">
+
+          <div class="card" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/nCD2hj6zJEc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Dheere Dheere</h5>
+               <a href="https://www.youtube.com/embed/nCD2hj6zJEc" class="btn btn-primary">Play with Youtube</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/g7PP_gkcdgE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         <div class="card-body">
+           <h5 class="card-title">Bom diggy</h5>
+           <a href="https://www.youtube.com/embed/g7PP_gkcdgE" class="btn btn-primary">Play with Youtube</a>
+         </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/Ov0YGGSY6gY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="card-body">
+        <h5 class="card-title">Kaun Tujhe</h5>
+          <a href="https://www.youtube.com/embed/Ov0YGGSY6gY" class="btn btn-primary">Play with Youtube</a>
+        </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+        <iframe width="250" height="150"
+        src="https://www.youtube.com/embed/_iktURk0X-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="card-body">
+        <h5 class="card-title">Phir b</h5>
+
+        <a href="https://www.youtube.com/embed/_iktURk0X-A" class="btn btn-primary">Play with Youtube</a>
+        </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/IJq0yyWug1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="card-body">
+        <h5 class="card-title">Tum Hi ho</h5>
+
+        <a href="https://www.youtube.com/embed/IJq0yyWug1k" class="btn btn-primary">Play with Youtube</a>
+        </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/mEMHF5W4zlY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="card-body">
+        <h5 class="card-title">tera ghata</h5>
+
+        <a href="https://www.youtube.com/embed/mEMHF5W4zlY" class="btn btn-primary">Play with Youtube</a>
+        </div>
+        </div>
+  </div>
+</div>
+</div>
+<!--punjabisongs-->
+<div>
+<p >
+<button class="large-button lb6"  data-toggle="collapse" role="button" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6"><h2  id="punjabi">PUNJABI</h2></button>
+</p>
+<div class="collapse " id="collapseExample6">
+<div class="card card-body ">
+
+          <div class="card bg-dark" style="width: 18rem;">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/nCD2hj6zJEc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Dheere Dheere</h5>
+               <a href="https://www.youtube.com/embed/nCD2hj6zJEc" class="btn btn-primary">Play with Youtube</a>
+            </div>
+        </div>
+
+        <div class="card bg-dark" style="width: 18rem;">
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/g7PP_gkcdgE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         <div class="card-body">
+           <h5 class="card-title">Bom diggy</h5>
+           <a href="https://www.youtube.com/embed/g7PP_gkcdgE" class="btn btn-primary">Play with Youtube</a>
+         </div>
+        </div>
+
+        <div class="card bg-dark" style="width: 18rem;">
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/Ov0YGGSY6gY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="card-body">
+        <h5 class="card-title">Kaun Tujhe</h5>
+          <a href="https://www.youtube.com/embed/Ov0YGGSY6gY" class="btn btn-primary">Play with Youtube</a>
+        </div>
+        </div>
+
+        <div class="card bg-dark" style="width: 18rem;">
+        <iframe width="250" height="150"
+        src="https://www.youtube.com/embed/_iktURk0X-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="card-body">
+        <h5 class="card-title">Phir b</h5>
+
+        <a href="https://www.youtube.com/embed/_iktURk0X-A" class="btn btn-primary">Play with Youtube</a>
+        </div>
+        </div>
+
+
+        <div class="card bg-dark" style="width: 18rem;">
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/IJq0yyWug1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="card-body">
+        <h5 class="card-title">Tum Hi ho</h5>
+
+        <a href="https://www.youtube.com/embed/IJq0yyWug1k" class="btn btn-primary">Play with Youtube</a>
+        </div>
+        </div>
+
+
+    <!--this is changed-->
+        <div class="card bg-dark" style="width: 18rem;">
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/mEMHF5W4zlY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="card-body ">
+        <h5 class="card-title">tera ghata</h5>
+
+        <a href="https://www.youtube.com/embed/mEMHF5W4zlY" class="btn btn-primary">Play with Youtube</a>
+        </div>
+        </div>
+  </div>
+</div>
+</div>
+</section>
+</div><!--menu over-->
+
+<!--login page-->
+
+
+
+
+
+
+<div id="id01" class="modal">
+
+<form class="modal-content animate" action="/action_page.php">
+  <div class="imgcontainer">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <img src="user.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname" ><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+      
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+  }
+}
+</script>
+
+
+<section class="faltu">
+  <div class="center">
+    <a href="https://www.facebook.com/rks2412?hc_ref=ARTydoQnR5CkapM0OySwqOf_O6EC2F2HcR2pCTqAVE0LqiMJCNu_mmFVEVjkCoq_eS4"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/raj_k_singh_/"><i class="fa fa-instagram"></i></a>
+    <a href="https://twitter.com/rajksingh24"><i class="fa fa-twitter"></i></a> 
+    <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+    <a href="https://vimeo.com/"><i class="fa fa-vimeo"></i></a>
+   
+   
+  </div>
+
+
+</section>
+
+
+<script src="video.js"></script>
+</body>
+</html>
